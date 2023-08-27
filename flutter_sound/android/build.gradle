@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.1'
+        classpath 'com.android.tools.build:gradle:7.1.2'
     }
 }
 
@@ -24,10 +24,10 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     defaultConfig {
-        minSdkVersion 18 // 18 works fine for the player, but the recorder needs at least 24
+        minSdkVersion 21 // 18 works fine for the player, but the recorder needs at least 24
     }
     lintOptions {
         disable 'InvalidPackage'
